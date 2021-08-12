@@ -1,0 +1,35 @@
+.manage-user-page-class {
+  padding: 40px 48px 24px 24px !important
+}
+
+.referral-row-template-class {
+  padding: 16px 0px 16px 24px !important;
+}
+
+.add-user-button-class {
+  width: 172px;
+  height: 48px;
+}
+
+.button-common-class {
+  background: #e91051 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 500 !important;
+  border: 0 !important;
+  color: #ffffff !important;
+}
+
+.generate-link-button {
+  padding: 8px 16px !important;
+}
+
+.spinLoader {
+  margin: 20px 0;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+

@@ -1,0 +1,376 @@
+syntax = "proto3";
+package com.mpl.services.westream.grpc;
+
+option java_multiple_files = true;
+
+
+message TestRequest {
+    string serviceName = 1;
+}
+
+message TestResponse {
+    string status = 1;
+}
+
+enum BroadCasterAccountStatus {
+    ACTIVE = 0;
+    SUSPENDED = 1;
+    DEACTIVATED = 2;
+}
+
+enum Gender {
+    MALE = 0;
+    FEMALE = 1;
+    OTHER = 2;
+}
+
+enum Role {
+    ADMIN = 0;
+    BROADCASTER = 1;
+    AUDITOR = 2;
+    EMPLOYEE = 3;
+}
+
+enum Tier {
+    SILVER = 0;
+    GOLD = 1;
+    PLATINUM = 2;
+}
+
+enum UserStatus {
+    INVITED = 0;
+    ONBOARDED = 1;
+    REVOKED = 2;
+}
+
+message UserDetails {
+    string userEmail = 1;
+    string userPhoneNumber = 2;
+    string userName = 3;
+    Role role = 4;
+    Tier tier = 5;
+    string invitedAt = 6;
+    UserStatus userStatus = 7;
+}
+
+message InviteBroadCasterRequest {
+    string requestedBy = 1;
+    UserDetails userDetails = 2;
+}
+
+message BulkInviteBroadCastersRequest {
+    string requestedBy = 1;
+    repeated UserDetails userDetails = 2;
+}
+
+message BulkInviteBroadCastersResponse {
+    repeated string message = 1;
+}
+
+message GetAllUsersRequest {
+    string requestedBy = 1;
+    int32 offset = 2;
+    int32 count = 3;
+}
+
+message GetUserResponse {
+    repeated UserDetails userDetails = 1;
+
+}
+
+message SearchUserRequest {
+    string requestedBy = 1;
+    string userName = 2;
+    int32 offset = 3;
+    int32 count = 4;
+
+}
+
+message SearchUserResponse {
+    repeated UserDetails userDetails = 1;
+}
+
+message UpdateUserRequest {
+    string requestedBy = 1;
+    uint64 userId = 2;
+    string name = 3;
+    Tier tier = 4;
+}
+
+message Address {
+    string line1 = 1;
+    string line2 = 2;
+    string city = 3;
+    string state = 4;
+    string country = 5;
+    int32 pinCode = 6;
+}
+
+message BroadCasterDetails {
+    string firstName = 1;
+    string lastName = 2;
+    string emailId = 3;
+    Address address = 4;
+    repeated string languages = 5;
+    string gender = 6;
+    string profileImgUrl = 7;
+}
+
+message CreateBroadCasterProfileRequest {
+    uint64 userId = 1;
+    BroadCasterDetails broadCasterDetails = 2;
+}
+
+message UpdateBroadCasterProfile {
+    uint64 userId = 1;
+    BroadCasterDetails broadCasterDetails = 2;
+}
+
+message GetBroadCasterProfileRequest {
+    uint64 userId = 1;
+}
+
+message GetBroadCasterProfileResponse {
+    BroadCasterDetails broadCasterDetails = 1;
+}
+
+message FinancialDetails {
+    string panNumber = 1;
+    string gstNumber = 2;
+    string panImgUrl = 3;
+    string gstImgUrl = 4;
+    string accountHolderName = 5;
+    string bankName = 6;
+    string ifscCode = 7;
+    string accountNumber = 8;
+}
+
+message CreateFinancialDetailsRequest {
+    uint64 userId = 1;
+    FinancialDetails financialDetails = 2;
+}
+
+message UpdateFinancialDetailsRequest {
+    uint64 userId = 1;
+    FinancialDetails financialDetails = 2;
+}
+
+message authenticatedUserCredsRequest {
+    uint64 userId = 1;
+    string userEmail = 2;
+    string accessToken = 3;
+    string refreshToken = 4;
+    string expiryDate = 5;
+}
+
+message GetFinancialDetailsRequest {
+    uint64 userId = 1;
+}
+
+message GetFinancialDetailsResponse {
+    FinancialDetails financialDetails = 2;
+}
+
+message VodDetails {
+    string vodId = 1;
+    string vodUrl = 2;
+    string platformName = 3;
+    string videoType = 4;
+    string vodLengthInSeconds = 5;
+    repeated string tags = 6;
+    repeated string tournaments = 7;
+    AuditStatus vodStatus = 8;
+    string createdAt = 9;
+    int32 viewCount = 10;
+    string watchTimeInSec = 11;
+    string auditorComment = 12;
+    int32 concurrency = 13;
+    int32 commentCount = 14;
+    int32 likeCount = 15;
+    int32 disLikeCount = 16;
+    int32 onBoarded = 17;
+    string title = 18;
+}
+
+message GetSubmittedVodsRequest {
+    uint64 userId = 1;
+    int32 offset = 2;
+    int32 count = 3;
+}
+
+message GetSubmittedVodsResponse {
+    repeated VodDetails vodDetails = 1;
+}
+
+message SaveVodRequest {
+    uint64 userId = 1;
+    VodDetails vodDetails = 2;
+}
+
+message GetVideoAnalyticsRequest {
+    uint64 userId = 1;
+    int32 offset = 2;
+    int32 count = 3;
+}
+message GetVideoAnalyticsResponse {
+    repeated VodDetails voDetails = 1;
+}
+
+message GetMyAnalyticsRequest {
+    uint64 userId = 1;
+}
+
+message GetMyAnalyticsResponse {
+    int32 videoCount = 1;
+    int32 viewCount = 2;
+    string watchTimeInMin = 3;
+}
+message EarningDetails {
+    string startTime = 1;
+    string endTime = 2;
+    int32 amount = 3;
+    string dateOfPayment = 4;
+    Tier tier = 5;
+    string destination = 6;
+    string referenceId = 7;
+    string receiptUrl = 8;
+
+}
+message GetMonthlyEarningDetailsRequest {
+    uint64 userId = 1;
+    int32 offset = 2;
+    int32 count = 3;
+}
+
+message GetMonthlyEarningDetailsResponse {
+    repeated EarningDetails earningDetails = 1;
+}
+
+message GetEarningHighlightsRequest {
+    uint64 userId = 1;
+}
+
+message GetEarningHighlightsResponse {
+    int32 thisMonthEarning = 1;
+    int32 lastMonthEarning = 2;
+    int32 lifeTimeEarning = 3;
+}
+
+message GenerateReferralLinkRequest {
+    uint64 userId = 1;
+    string destination = 2;
+}
+
+message GenerateReferralLinkResponse {
+    string referralUrl = 1;
+    string destination = 2;
+}
+
+message GetReferralLinksRequest {
+    uint64 userId = 1;
+    int32 offset = 2;
+    int32 count = 3;
+}
+message ReferLinkDetails {
+    string link = 1;
+    string createdAt = 2;
+    string destination = 3;
+    int32 onBoarded = 4;
+}
+message GetReferralLinksResponse {
+    repeated ReferLinkDetails referralLinkDetails = 1;
+}
+
+message NotificationDetails {
+    uint64 notificationId = 1;
+    string message = 2;
+    string createdAt = 3;
+    bool seen = 4;
+}
+
+message GetNotificationsRequest {
+    uint64 userId = 1;
+    int32 count = 2;
+    string cursor = 3;
+}
+
+message GetNotificationsResponse {
+    repeated NotificationDetails notifications = 1;
+    string nextCursor = 2;
+}
+
+message BlockUserRequest {
+    string requestedBy = 1;
+    uint64 userId = 2;
+}
+
+message EmptyResponse {
+    string message = 1;
+}
+
+
+message GetReviewPendingVideosRequest {
+}
+
+message GetReviewPendingVideosResponse {
+}
+
+enum AuditStatus {
+    DRAFT = 0;
+    SUBMITTED = 1;
+    REJECTED = 2;
+    NEEDS_ATTENTION = 3;
+    ACCEPTED = 4;
+}
+
+message AuditVideoRequest {
+    string videoId = 1;
+    AuditStatus status = 2;
+    string reason = 3;
+    int64 auditedBy = 4;
+}
+
+message AuditVideoResponse {
+}
+
+message AddUserRequest {
+    string requestedBy = 1;
+    Role role = 2;
+    string fullName = 3;
+    string mobileNumber = 4;
+    string emailId = 5;
+}
+
+service WeStreamService {
+    rpc test (TestRequest) returns (TestResponse);
+    //admin rpc calls
+    rpc addUser (AddUserRequest) returns (EmptyResponse);
+    rpc inviteBroadCaster (InviteBroadCasterRequest) returns (EmptyResponse);
+    rpc bulkInviteBroadCasters (BulkInviteBroadCastersRequest) returns (EmptyResponse);
+    rpc getUsers (GetAllUsersRequest) returns (GetUserResponse);
+    rpc searchUser (SearchUserRequest) returns (SearchUserResponse);
+    rpc updateUser (UpdateUserRequest) returns (EmptyResponse);
+    rpc blockUser (BlockUserRequest) returns (EmptyResponse);
+
+    // broadcaster rpc calls
+    rpc createBroadCasterProfile (CreateBroadCasterProfileRequest) returns (EmptyResponse);
+    rpc createFinancialDetails (CreateFinancialDetailsRequest) returns (EmptyResponse);
+    rpc authenticatedUserCreds (authenticatedUserCredsRequest) returns (EmptyResponse);
+    rpc updateBroadCasterProfile (UpdateBroadCasterProfile) returns (EmptyResponse);
+    rpc updateFinancialDetails (UpdateFinancialDetailsRequest) returns (EmptyResponse);
+    rpc getBroadCasterProfile (GetBroadCasterProfileRequest) returns (GetBroadCasterProfileResponse);
+    rpc getFinancialDetails (GetFinancialDetailsRequest) returns (GetFinancialDetailsResponse);
+    rpc getSubmittedVods (GetSubmittedVodsRequest) returns (GetSubmittedVodsResponse);
+    rpc saveVod (SaveVodRequest) returns (EmptyResponse);
+    rpc getVideoAnalytics (GetVideoAnalyticsRequest) returns (GetVideoAnalyticsResponse);
+    rpc getAnalyticsHighlights (GetMyAnalyticsRequest) returns (GetMyAnalyticsResponse);
+    rpc getMonthlyEarningDetails (GetMonthlyEarningDetailsRequest) returns (GetMonthlyEarningDetailsResponse);
+    rpc getEarningHighlights (GetEarningHighlightsRequest) returns (GetEarningHighlightsResponse);
+    rpc generateReferralLink (GenerateReferralLinkRequest) returns (GenerateReferralLinkResponse);
+    rpc getReferralLinks (GetReferralLinksRequest) returns (GetReferralLinksResponse);
+    rpc getNotifications (GetNotificationsRequest) returns (GetNotificationsResponse);
+
+    // auditor rpc calls
+    rpc getReviewPendingVideos (GetReviewPendingVideosRequest) returns (GetReviewPendingVideosResponse);
+    rpc auditVideo (AuditVideoRequest) returns (AuditVideoResponse);
+}

@@ -1,0 +1,24 @@
+.referral-link-table .ant-table-cell {
+  background-color: #391958 !important;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+.referral-link-table .ant-pagination-item,
+.referral-link-table .ant-pagination-item-link {
+  border-color: #917fa2 !important;
+}
+
+.referral-link-table .ant-pagination-item > a,
+.referral-link-table .ant-pagination-item-link {
+  background-color: #917fa2 !important;
+  color: #ffffff !important;
+}
+
+.referral-link-table .ant-pagination-item-active > a {
+  color: black !important;
+  background-color: #ffffff !important;
+}

@@ -1,15 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { Button } from './components/button/button';
+import { AddUser } from './components/addusers/AddUser';
+import { Referral } from './components/referral/Referral';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Button label="click me please" />
-      </header>
-    </div>
+    <>
+      {/* <AddUser /> */}
+      <Referral />
+    </>
   );
 }
 

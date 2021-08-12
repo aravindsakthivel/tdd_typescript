@@ -1,0 +1,308 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div
+  className="ant-row referral-row-template-class general-background-border no-border-last"
+  style={Object {}}
+>
+  <div
+    className="ant-col ant-col-24"
+    style={Object {}}
+  >
+    <h5
+      className="ant-typography"
+      data-testid="referral-row-title"
+      style={
+        Object {
+          "WebkitLineClamp": undefined,
+        }
+      }
+    >
+      History
+    </h5>
+  </div>
+  <div
+    className="ant-col ant-col-23"
+    data-testid="referral-row-children"
+    style={Object {}}
+  >
+    <div
+      className="ant-table-wrapper referral-link-table"
+      style={
+        Object {
+          "backgroundColor": "#391958",
+        }
+      }
+    >
+      <div
+        className="ant-spin-nested-loading"
+      >
+        <div
+          className="ant-spin-container"
+        >
+          <div
+            className="ant-table"
+          >
+            <div
+              className="ant-table-container"
+            >
+              <div
+                className="ant-table-content"
+                onScroll={[Function]}
+                style={Object {}}
+              >
+                <table
+                  style={
+                    Object {
+                      "tableLayout": "auto",
+                    }
+                  }
+                >
+                  <colgroup />
+                  <thead
+                    className="ant-table-thead"
+                  >
+                    <tr>
+                      <th
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        URL / Link
+                      </th>
+                      <th
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        Created On
+                      </th>
+                      <th
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        Destination
+                      </th>
+                      <th
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        Onboarded
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody
+                    className="ant-table-tbody"
+                  >
+                    <tr
+                      className="ant-table-row ant-table-row-level-0"
+                      data-row-key="1"
+                      onClick={[Function]}
+                      style={Object {}}
+                    >
+                      <td
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        https://mpl.live/mycustomcodeforamqzingoffers 
+                      </td>
+                      <td
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        12:01pm, 12 Mar 2020
+                      </td>
+                      <td
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        1 days
+                      </td>
+                      <td
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        12
+                      </td>
+                    </tr>
+                    <tr
+                      className="ant-table-row ant-table-row-level-0"
+                      data-row-key="2"
+                      onClick={[Function]}
+                      style={Object {}}
+                    >
+                      <td
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        https://mpl.live/mycustomcodeforamqzingoffers 
+                      </td>
+                      <td
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        12:01pm, 12 Mar 2020
+                      </td>
+                      <td
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        3 days
+                      </td>
+                      <td
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        33
+                      </td>
+                    </tr>
+                    <tr
+                      className="ant-table-row ant-table-row-level-0"
+                      data-row-key="3"
+                      onClick={[Function]}
+                      style={Object {}}
+                    >
+                      <td
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        https://mpl.live/mycustomcodeforamqzingoffers 
+                      </td>
+                      <td
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        12:01pm, 12 Mar 2020
+                      </td>
+                      <td
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        7 days
+                      </td>
+                      <td
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        325
+                      </td>
+                    </tr>
+                    <tr
+                      className="ant-table-row ant-table-row-level-0"
+                      data-row-key="4"
+                      onClick={[Function]}
+                      style={Object {}}
+                    >
+                      <td
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        https://mpl.live/mycustomcodeforamqzingoffers 
+                      </td>
+                      <td
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        12:01pm, 12 Mar 2020
+                      </td>
+                      <td
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        8 days
+                      </td>
+                      <td
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        5466
+                      </td>
+                    </tr>
+                    <tr
+                      className="ant-table-row ant-table-row-level-0"
+                      data-row-key="5"
+                      onClick={[Function]}
+                      style={Object {}}
+                    >
+                      <td
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        https://mpl.live/mycustomcodeforamqzingoffers 
+                      </td>
+                      <td
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        12:01pm, 12 Mar 2020
+                      </td>
+                      <td
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        7 days
+                      </td>
+                      <td
+                        className="ant-table-cell"
+                        colSpan={null}
+                        rowSpan={null}
+                        style={Object {}}
+                      >
+                        325
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

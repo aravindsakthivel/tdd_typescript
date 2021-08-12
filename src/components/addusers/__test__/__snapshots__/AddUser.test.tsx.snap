@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+Array [
+  <div
+    className="ant-row ant-row-space-between general-background-border manage-user-page-class add-user"
+    style={Object {}}
+  >
+    <div
+      className="ant-col ant-col-5"
+      style={Object {}}
+    >
+      <h2
+        className="ant-typography"
+        style={
+          Object {
+            "WebkitLineClamp": undefined,
+            "color": "#ffffff",
+          }
+        }
+      >
+        Manage User
+      </h2>
+    </div>
+    <div
+      className="ant-col ant-col-3"
+      style={Object {}}
+    >
+      <button
+        className="ant-btn ant-btn-text ant-btn-lg add-user-button-class button-common-class"
+        data-testid="add-user-button"
+        onClick={[Function]}
+        type="button"
+      >
+        <span>
+          Add User
+        </span>
+      </button>
+    </div>
+  </div>,
+  <div />,
+]
+`;

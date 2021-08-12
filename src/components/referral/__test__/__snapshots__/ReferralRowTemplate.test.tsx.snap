@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot with title 1`] = `
+<div
+  className="ant-row referral-row-template-class general-background-border false"
+  style={Object {}}
+>
+  <div
+    className="ant-col ant-col-24"
+    style={Object {}}
+  >
+    <h5
+      className="ant-typography"
+      data-testid="referral-row-title"
+      style={
+        Object {
+          "WebkitLineClamp": undefined,
+        }
+      }
+    >
+      none
+    </h5>
+  </div>
+  <div
+    className="ant-col ant-col-23"
+    data-testid="referral-row-children"
+    style={Object {}}
+  />
+</div>
+`;
+
+exports[`matches snapshot with title and children 1`] = `
+<div
+  className="ant-row referral-row-template-class general-background-border false"
+  style={Object {}}
+>
+  <div
+    className="ant-col ant-col-24"
+    style={Object {}}
+  >
+    <h5
+      className="ant-typography"
+      data-testid="referral-row-title"
+      style={
+        Object {
+          "WebkitLineClamp": undefined,
+        }
+      }
+    >
+      test-text
+    </h5>
+  </div>
+  <div
+    className="ant-col ant-col-23"
+    data-testid="referral-row-children"
+    style={Object {}}
+  >
+    <div
+      className="ant-card ant-card-bordered referral-info-card"
+      style={
+        Object {
+          "background": "#492D66",
+          "border": 0,
+          "height": 108,
+          "width": 218,
+        }
+      }
+    >
+      <div
+        className="ant-card-body"
+        style={Object {}}
+      >
+        <span
+          className="ant-typography ant-typography-secondary"
+          data-testid="info-card-title"
+          style={
+            Object {
+              "WebkitLineClamp": undefined,
+              "color": "#ffffff",
+            }
+          }
+        >
+          User Onboarded this month
+        </span>
+        <h3
+          className="ant-typography"
+          data-testid="info-card-onboard-count"
+          style={
+            Object {
+              "WebkitLineClamp": undefined,
+              "marginTop": "5px",
+            }
+          }
+        >
+          320
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
+`;

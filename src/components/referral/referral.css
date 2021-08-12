@@ -1,0 +1,46 @@
+.general-background-border {
+  background: #391958 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.referral-link-modal .ant-modal-content,
+.referral-link-modal .ant-modal-header,
+.referral-link-modal .ant-modal-body,
+.referral-link-modal .ant-modal-footer,
+.referral-link-destination-option,
+.referral-link-form .ant-select-selector {
+  background-color: #492d66 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.general-background-border .ant-typography,
+.referral-link-destination-option .ant-select-item-option-content,
+.referral-link-modal .ant-modal-header .ant-modal-title,
+.referral-link-modal .ant-modal-body .ant-typography,
+.referral-link-modal .ant-modal-content .anticon,
+.referral-link-form .ant-select-selection-item,
+.referral-link-form .ant-select-arrow {
+  color: #ffffff;
+}
+
+.ant-select-dropdown {
+  padding: 0 !important;
+}
+
+.no-border-last {
+  border: 0 !important;
+}
+
+.referral-link-modal .ant-typography-copy {
+  float: right;
+}
+
+.referralLinkCover > div {
+  margin-bottom: 0 !important;
+}
+
+.referralLinkCover {
+  width: 100%;
+  background-color: #2d0f4d;
+  padding: 5px;
+}

@@ -1,0 +1,8 @@
+.custom-class-success > .ant-message-notice-content {
+  background-color: #33ff66 !important;
+}
+
+.custom-class-error > .ant-message-notice-content {
+  background-color: #fc9e58 !important;
+}
+

@@ -1,0 +1,23 @@
+enum Roles {
+  ADMIN
+  BROADCASTER
+  AUDITOR
+  EMPLOYEE
+}
+
+input AddUserRequest {
+  requestedBy: String!
+  role: Roles!
+  fullName: String!
+  mobileNumber: String!
+  emailId: String!
+}
+
+type AddUserResponse {
+  message: String
+  isSuccess: Boolean
+}
+
+extend type Mutation {
+  addUser(data: AddUserRequest): AddUserResponse
+}

@@ -1,0 +1,20 @@
+directive @auth on FIELD_DEFINITION
+
+type Book @key(fields: "title") {
+  title: String
+  author: String
+}
+
+type Author @key(fields: "name") {
+  name: String
+  books: [Book]
+}
+
+extend type Query {
+  books: [Book] @auth
+  authors: [String]
+}
+
+extend type Mutation {
+  addBook(title: String, author: String): Book @auth
+}

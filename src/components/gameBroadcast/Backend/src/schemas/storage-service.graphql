@@ -1,0 +1,48 @@
+input CreateObjectRequest {
+  requestId: String
+  params: CreateObjectParams
+}
+
+input CreateObjectParams {
+  owner: String
+  prefix: String
+  allowPublicAccess: Boolean
+  fileName: String
+  extension: String
+  contentType: String
+  contentDisposition: String
+}
+
+type SSObject {
+  id: String
+  owner: String
+  prefix: String
+  isPublic: Boolean
+  contentType: String
+  contentDisposition: String
+}
+
+enum Reason {
+  NONE
+  UNKNOWN
+  BAD_REQUEST
+  EXTERNAL_ERROR
+  TEMPORARY_OBJECT_NOT_FOUND
+  FAILED_TO_FETCH_FROM_WEB_URI
+  OBJECT_NOT_FOUND
+}
+
+type StorageServiceError {
+  reason: Reason
+  message: String
+}
+
+type CreateObjectResponse {
+  error: StorageServiceError
+  object: SSObject
+  uploadUrl: String
+}
+
+extend type Mutation {
+  createObject(data: CreateObjectRequest): CreateObjectResponse
+}

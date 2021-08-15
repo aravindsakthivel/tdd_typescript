@@ -1,0 +1,16 @@
+.spinLoader {
+  margin: 20px 0;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.custom-class-success > .ant-message-notice-content {
+  background-color: #33ff66 !important;
+}
+
+.custom-class-error > .ant-message-notice-content {
+  background-color: #fc9e58 !important;
+}

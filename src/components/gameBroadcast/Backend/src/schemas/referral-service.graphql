@@ -1,0 +1,37 @@
+input GenerateReferralLinkRequest {
+  userId: ID!
+  destination: String!
+}
+
+type GenerateReferralLinkResponse {
+  referralUrl: String
+  destination: String
+}
+
+input GetReferralLinksRequest {
+  userId: ID!
+  offset: Int!
+  count: Int!
+}
+
+type ReferralLink {
+  link: String
+  createdAt: String
+  destination: String
+  onBoarded: String
+}
+
+type GetReferralLinksResponse {
+  referralLinkDetails: [ReferralLink]
+}
+
+extend type Query {
+  getReferralLinks(data: GetReferralLinksRequest): GetReferralLinksResponse!
+}
+
+extend type Mutation {
+  generateReferralLink(
+    data: GenerateReferralLinkRequest
+  ): GenerateReferralLinkResponse!
+}
+

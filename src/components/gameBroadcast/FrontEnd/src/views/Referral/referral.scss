@@ -1,0 +1,104 @@
+.general-background-border {
+  background: #391958 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.referral-link-modal .ant-modal-content,
+.referral-link-modal .ant-modal-header,
+.referral-link-modal .ant-modal-body,
+.referral-link-modal .ant-modal-footer,
+.referral-link-destination-option,
+.referral-link-form .ant-select-selector {
+  background-color: #492d66 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.general-background-border .ant-typography,
+.referral-link-destination-option .ant-select-item-option-content,
+.referral-link-modal .ant-modal-header .ant-modal-title,
+.referral-link-modal .ant-modal-body .ant-typography,
+.referral-link-modal .ant-modal-content .anticon,
+.referral-link-form .ant-select-selection-item,
+.referral-link-form .ant-select-arrow {
+  color: #ffffff;
+}
+
+.ant-select-dropdown {
+  padding: 0 !important;
+}
+
+.no-border-last {
+  border: 0 !important;
+}
+
+.referral-link-modal .ant-typography-copy {
+  float: right;
+}
+
+.referral-link-modal .ant-modal-close-icon {
+  margin-top: 17px;
+}
+
+.referralLinkCover > div {
+  margin-bottom: 0 !important;
+}
+
+.referralLinkCover > div > div {
+  margin-top: 4px;
+}
+
+.referralLinkCover {
+  width: 100%;
+  background-color: #2d0f4d;
+  padding: 5px;
+}
+
+.referral-row-template-class {
+  padding: 16px 0px 16px 24px !important;
+}
+
+.button-common-class {
+  background: #e91051 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 500 !important;
+  border: 0 !important;
+  color: #ffffff !important;
+}
+
+.generate-link-button {
+  padding: 8px 16px !important;
+}
+
+.referral-info-card .ant-typography-secondary {
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 12px !important;
+  line-height: 20px !important;
+  opacity: 75% !important;
+}
+
+.referral-link-table .ant-table-cell {
+  background-color: #391958 !important;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+}
+
+.referral-link-table .ant-pagination-item,
+.referral-link-table .ant-pagination-item-link {
+  border-color: #917fa2 !important;
+}
+
+.referral-link-table .ant-pagination-item > a,
+.referral-link-table .ant-pagination-item-link {
+  background-color: #917fa2 !important;
+  color: #ffffff !important;
+}
+
+.referral-link-table .ant-pagination-item-active > a {
+  color: black !important;
+  background-color: #ffffff !important;
+}

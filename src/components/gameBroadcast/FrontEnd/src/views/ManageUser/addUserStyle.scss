@@ -1,0 +1,77 @@
+.general-background-border {
+  background: #391958 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.add-user-modal .ant-modal-content,
+.add-user-modal .ant-modal-header,
+.add-user-modal .ant-modal-body,
+.add-user-modal .ant-modal-footer,
+.add-user-modal .ant-select-selector,
+.add-user-modal #form_in_modal_phoneNumber,
+.add-user-modal .ant-form-item-control-input-content > input {
+  background-color: #492d66 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.add-user-modal-select {
+  background-color: #492d66 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+}
+
+.add-user-modal-prefix .ant-select-selector {
+  border: 0 !important;
+}
+
+.add-user-modal .ant-select-selection-item,
+.add-user-modal .ant-select-arrow,
+.add-user-modal .ant-modal-title,
+.add-user-modal .anticon-close,
+.add-user-modal .ant-modal-close-icon,
+.add-user-modal .ant-btn,
+.add-user-modal .ant-btn-text,
+.add-user-modal .ant-input {
+  color: #ffffff !important;
+}
+
+.ant-select-dropdown {
+  padding: 0 !important;
+}
+
+.add-user-modal .ant-input-group-addon {
+  background-color: #492d66 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.add-user-modal .ant-message-notice-content {
+  width: 379px !important;
+  height: 56px !important;
+}
+
+.add-user-modal .ant-message-notice-content {
+  padding-top: 15px !important;
+}
+
+.button-common-class {
+  background: #e91051 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 500 !important;
+  border: 0 !important;
+  color: #ffffff !important;
+}
+
+.manage-user-page-class {
+  padding: 40px 48px 24px 24px !important;
+}
+
+.add-user-button-class {
+  width: 172px;
+  height: 48px;
+}
+
+
+.add-user-modal .ant-modal-close-icon {
+  margin-top: 17px;
+}
